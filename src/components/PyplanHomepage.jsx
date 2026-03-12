@@ -94,8 +94,7 @@ export default function PyplanHomepage() {
       <main>
         <section className="relative overflow-hidden border-b border-slate-200" style={{ background: `radial-gradient(circle at top left, ${palette.yellowSoft}, transparent 28%), radial-gradient(circle at top right, ${palette.blueSoft}, transparent 32%), linear-gradient(to bottom, white, white)` }}>
           <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
-            <div className="grid gap-14 lg:grid-cols-[1.15fr,0.85fr] lg:items-center">
-              <div>
+            <div>
                 <div className="mb-6 flex flex-wrap gap-3">
                   {heroPills.map((pill) => (
                     <span
@@ -128,43 +127,39 @@ export default function PyplanHomepage() {
                     </div>
                   ))}
                 </div>
-              </div>
+            </div>
+          </div>
+        </section>
 
-              <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/60">
-                
-                <div className="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-6">
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
-                    How it works
-                  </p>
-                  <div className="mt-6 space-y-4">
-                    <div className="rounded-2xl border border-slate-200 bg-white p-4">
-                      <p className="text-sm font-medium text-slate-500">1. Business question</p>
-                      <p className="mt-1 text-base font-semibold text-slate-950">
-                        What is the impact of a demand shift or supply constraint?
-                      </p>
-                    </div>
-                    <div className="flex justify-center text-slate-300">↓</div>
-                    <div className="rounded-2xl border border-slate-200 bg-white p-4">
-                      <p className="text-sm font-medium text-slate-500">2. AI + Pyplan</p>
-                      <p className="mt-1 text-base font-semibold text-slate-950">
-                        LLM interprets the question. Pyplan computes the scenario using Python business logic.
-                      </p>
-                    </div>
-                    <div className="flex justify-center text-slate-300">↓</div>
-                    <div className="rounded-2xl border border-slate-200 bg-white p-4">
-                      <p className="text-sm font-medium text-slate-500">3. Decision support</p>
-                      <p className="mt-1 text-base font-semibold text-slate-950">
-                        Teams get explainable operational and financial outcomes before taking action.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+        <section className="border-t border-slate-200 bg-white">
+          <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em]" style={{ color: palette.blue }}>
+              How it works
+            </p>
+            <div className="mt-10 grid gap-6 lg:grid-cols-3">
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                <p className="text-sm font-medium text-slate-500">1. Business question</p>
+                <p className="mt-3 text-base font-semibold text-slate-950">
+                  What is the impact of a demand shift or supply constraint?
+                </p>
+              </div>
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                <p className="text-sm font-medium text-slate-500">2. AI + Pyplan</p>
+                <p className="mt-3 text-base font-semibold text-slate-950">
+                  LLM interprets the question. Pyplan computes the scenario using Python business logic.
+                </p>
+              </div>
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                <p className="text-sm font-medium text-slate-500">3. Decision support</p>
+                <p className="mt-3 text-base font-semibold text-slate-950">
+                  Teams get explainable operational and financial outcomes before taking action.
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="markets" className="bg-white">
+        <section id="markets" className="border-t border-slate-200 bg-white">
           <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
             <div className="max-w-3xl">
               
